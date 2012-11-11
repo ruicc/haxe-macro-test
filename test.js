@@ -118,8 +118,8 @@ Test.main = function() {
 			return $r;
 		}(this));
 	};
-	var cls = routing("Moge");
-	console.log("class:" + cls.action());
+	var ctl = routing("Moge");
+	console.log("class:" + ctl.action());
 }
 var Controller = function() { }
 Controller.__name__ = true;
@@ -132,7 +132,7 @@ Hoge.__name__ = true;
 Hoge.__interfaces__ = [Controller];
 Hoge.prototype = {
 	action: function() {
-		return "Hoge class is created";
+		return "Hoge obj is created";
 	}
 	,__class__: Hoge
 }
@@ -142,7 +142,7 @@ Moge.__name__ = true;
 Moge.__interfaces__ = [Controller];
 Moge.prototype = {
 	action: function() {
-		return "Moge class is created";
+		return "Moge obj is created";
 	}
 	,__class__: Moge
 }
